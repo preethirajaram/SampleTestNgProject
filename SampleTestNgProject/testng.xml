@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+	<parameter name="BookName" value="Harry Potter" />
+	<listeners>
+		<listener class-name="regSuits_Utils.TestListener"/>
+	</listeners>
+	<test name="TestNg Testing">
+		<classes>
+			<class name="regSuite_Tests.SampleTests">
+				<methods>
+					<include name ="searchABook" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

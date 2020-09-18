@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="18201" started-at="2020-09-18T13:20:31Z" finished-at="2020-09-18T13:20:49Z">
+    <groups>
+    </groups>
+    <test name="TestNg Testing" duration-ms="18201" started-at="2020-09-18T13:20:31Z" finished-at="2020-09-18T13:20:49Z">
+      <class name="regSuite_Tests.SampleTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:regSuite_Tests.SampleTests@66d33a]" name="setUp" is-config="true" duration-ms="6676" started-at="2020-09-18T18:50:24Z" finished-at="2020-09-18T18:50:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:regSuite_Tests.SampleTests@66d33a]" name="launchApp" is-config="true" duration-ms="10350" started-at="2020-09-18T18:50:31Z" finished-at="2020-09-18T18:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="searchABook(java.lang.String)[pri:0, instance:regSuite_Tests.SampleTests@66d33a]" name="searchABook" duration-ms="7833" started-at="2020-09-18T18:50:41Z" finished-at="2020-09-18T18:50:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Harry Potter]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchABook -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:regSuite_Tests.SampleTests@66d33a]" name="teardown" is-config="true" duration-ms="861" started-at="2020-09-18T18:50:49Z" finished-at="2020-09-18T18:50:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- regSuite_Tests.SampleTests -->
+    </test> <!-- TestNg Testing -->
+  </suite> <!-- TestSuite -->
+</testng-results>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [TestSuite]">
+  <parameter name="BookName" value="Harry Potter"/>
+  <test name="TestNg Testing(failed)" preserve-order="true">
+    <parameter name="BookName" value="Harry Potter"/>
+    <classes>
+      <class name="regSuite_Tests.SampleTests">
+        <methods>
+          <include name="searchABook" invocation-numbers="0"/>
+          <include name="launchApp"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

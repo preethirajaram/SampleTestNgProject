@@ -1,0 +1,6 @@
+regSuits_Utils\TestListener.class
+regSuite_PageObjects\HomePage.class
+regSuite_Tests\SampleTests.class
+regSuite_BaseSuite\BaseSuite.class
+regSuits_Utils\ReadDataFile.class
+regSuits_Utils\DriverActions.class
