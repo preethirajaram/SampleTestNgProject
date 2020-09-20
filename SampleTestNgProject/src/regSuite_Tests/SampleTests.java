@@ -18,5 +18,10 @@ public class SampleTests extends BaseSuite {
 		homepage.searchBook(bookName);
 		homepage.assertSearchTitle();
 	}
+	
+	@Test
+	public void testSample(){
+		System.out.println("Sale!");
+	}
 
 }
