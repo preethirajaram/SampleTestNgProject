@@ -23,5 +23,10 @@ public class SampleTests extends BaseSuite {
 	public void testSample(){
 		System.out.println("Sale!");
 	}
+	
+	@Test
+	public void printName() {
+		System.out.println("Preethi");
+	}
 
 }
