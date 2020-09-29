@@ -13,5 +13,12 @@
 				</methods>
 			</class>
 		</classes>
+		<classes>
+			<class name="regSuite_Tests.AmazonTest">
+				<methods>
+					<include name ="OpenMenu" />
+				</methods>
+			</class>
+		</classes>
 	</test>
 </suite>
