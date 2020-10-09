@@ -33,13 +33,15 @@ public class BaseSuite
 		String browserType = dataFile.getData("browser");		
 		if(browserType.equalsIgnoreCase("Chrome")){
 			System.out.println("Chrome Browser");
-			System.setProperty("webdriver.chrome.driver",path+"//lib//chromedriver.exe");
-			this.driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver",path+"//lib//chromedriver");
+//			String driverPath = "/Users/manpreetkaur/automation/drivers/chromedriver";
+//			System.setProperty("webdriver.chrome.driver", driverPath);
+			driver = new ChromeDriver();
 		}
 		else if(browserType.equalsIgnoreCase("Firefox") ){
 			System.out.println("Firefox Browser");
 			System.setProperty("webdriver.gecko.driver",path+"//lib//geckodriver");
-			this.driver = new FirefoxDriver();
+			driver = new FirefoxDriver();
 		}
 	}
 

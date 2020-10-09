@@ -23,6 +23,10 @@ public class DriverActions extends BaseSuite {
 	public static String getDatafromPage(WebElement searchresults){
 		return searchresults.getText();
 	}
+	
+	public static boolean isElementVisible(WebElement element) {
+		return element.isDisplayed();
+	}
 
 
 }
