@@ -9,11 +9,11 @@ import org.testng.Assert;
 
 import regSuite_BaseSuite.BaseSuite;
 import regSuits_Utils.DriverActions;
-import regSuits_Utils.ReadDataFile;
 
-public class HomePage {
+public class HomePage extends BaseSuite {
 	WebDriver driver;
-	public ReadDataFile dataFile = new ReadDataFile(System.getProperty("user.dir")+"//configs//data.properties");
+	//ReadDataFile dataFile;
+	//public ReadDataFile dataFile = new ReadDataFile(System.getProperty("user.dir")+"//configs//data.properties");
 	
 	@FindBy(id="twotabsearchtextbox")
     WebElement searchBar;

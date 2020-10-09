@@ -6,46 +6,38 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import regSuite_BaseSuite.BaseSuite;
 import regSuits_Utils.DriverActions;
-import regSuits_Utils.ReadDataFile;
 
-public class AmazonMusicPage {
+public class AmazonMusicPage extends BaseSuite{
 	WebDriver driver;
-	public ReadDataFile dataFile = new ReadDataFile(System.getProperty("user.dir")+"//configs//data.properties");
-	
 	
 	@FindBy(id="nav-hamburger-menu")
     WebElement  Menu;
 	
-	@FindBy(xpath="//*[@id='hmenu-content']/ul[1]/li[3]/a")
+	@FindBy(xpath="//a[@class='hmenu-item']/div[text()='Amazon Prime Music']")
 	WebElement AmazonMusic;
 	
-	@FindBy(xpath="//*[@id='hmenu-content']/ul[3]/li[3]/a")
-	WebElement AmazonMusicUnlimited;
+	@FindBy(xpath="//ul[@data-menu-id='7']/li/div[text()='amazon prime music']")
+	WebElement AmazonMusicSubMenu;
 	
-	@FindBy (xpath="//*[@id='navBackToTop']/div/span")
-	WebElement BacktoTop;
-	
-	@FindBy(xpath="//img[contains(@src,'AMU_logo.png')]")
-	WebElement MusicUnlimitedImage;
+	@FindBy(xpath="//ul[@data-menu-id='7']/li[3]/a")
+	WebElement PrimeMusicImage;
 	
 	public AmazonMusicPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void OpenMenu()
+	public void NavigateToPrimeMusicImage() throws InterruptedException
     {
-
 		DriverActions.clickElementBy(Menu);
 		DriverActions.clickElementBy(AmazonMusic);
-		DriverActions.clickElementBy(AmazonMusicUnlimited);
-		//DriverActions.clickElementBy(BacktoTop);
-		
+		DriverActions.clickElementBy(AmazonMusicSubMenu);
 	}	
 	
-	public void assertOpenMenu() throws Exception{
-		Assert.assertTrue(DriverActions.isElementVisible(MusicUnlimitedImage));
+	public void assertPrimeMusicImage() throws Exception{
+		Assert.assertTrue(DriverActions.isElementVisible(PrimeMusicImage));
 	}
 }
 

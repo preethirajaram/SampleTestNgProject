@@ -6,19 +6,24 @@
 		<listener class-name="regSuits_Utils.TestListener"/>
 	</listeners>
 	<test name="TestNg Testing">
-		<classes>
+	<!--   	<classes>
 			<class name="regSuite_Tests.SampleTests">
 				<methods>
 					<include name ="searchABook" />
 				</methods>
 			</class>
 		</classes>
-		<classes>
+	  <classes>
 			<class name="regSuite_Tests.AmazonTest">
 				<methods>
 					<include name ="OpenMenu" />
 				</methods>
 			</class>
-		</classes>
+		</classes> -->	
+		
+	 	<classes>
+			<class name="regSuite_Tests.SampleTests"/>
+			<class name="regSuite_Tests.AmazonTest"/>
+		</classes> 
 	</test>
 </suite>
