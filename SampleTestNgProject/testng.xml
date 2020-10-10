@@ -4,6 +4,7 @@
 	<parameter name="BookName" value="Harry Potter" />
 	<listeners>
 		<listener class-name="regSuits_Utils.TestListener"/>
+		<listener class-name="regSuits_Utils.SuiteListener"/>
 	</listeners>
 	<test name="TestNg Testing">
 	<!--   	<classes>
@@ -12,18 +13,18 @@
 					<include name ="searchABook" />
 				</methods>
 			</class>
-		</classes>
+		</classes> -->
 	  <classes>
 			<class name="regSuite_Tests.AmazonTest">
 				<methods>
-					<include name ="OpenMenu" />
+					<include name ="AmazonPrimeMusic" />
 				</methods>
 			</class>
-		</classes> -->	
+		</classes> 
 		
-	 	<classes>
+	 <!--  <classes>
 			<class name="regSuite_Tests.SampleTests"/>
 			<class name="regSuite_Tests.AmazonTest"/>
-		</classes> 
+		</classes> -->	
 	</test>
 </suite>
