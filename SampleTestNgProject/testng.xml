@@ -13,18 +13,18 @@
 					<include name ="searchABook" />
 				</methods>
 			</class>
-		</classes> -->
+		</classes> 
 	  <classes>
 			<class name="regSuite_Tests.AmazonTest">
 				<methods>
 					<include name ="AmazonPrimeMusic" />
 				</methods>
 			</class>
-		</classes> 
+		</classes> -->
 		
-	 <!--  <classes>
+	  <classes>
 			<class name="regSuite_Tests.SampleTests"/>
 			<class name="regSuite_Tests.AmazonTest"/>
-		</classes> -->	
+		</classes> 
 	</test>
 </suite>
