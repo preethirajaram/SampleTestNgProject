@@ -47,5 +47,10 @@ public class SampleTests extends BaseSuite {
 		System.out.println("Money");
 	}
 	
+	@Test
+	public void payOnline2() {
+		System.out.println("Money");
+	}
+	
 
 }
