@@ -28,8 +28,8 @@ public class SampleTests extends BaseSuite {
 	}
 	
 	@Test
-	public void printName() {
-		System.out.println("Preethi");
+	public void printName12() {
+		System.out.println("Preethi12");
 	}
 	
 	@Test
@@ -41,5 +41,21 @@ public class SampleTests extends BaseSuite {
 	public void payOnline() {
 		System.out.println("Money");
 	}
+	
+	@Test
+	public void payOnline1() {
+		System.out.println("Money");
+	}
+	
+	@Test
+	public void payOnline2() {
+		System.out.println("Money");
+	}
+	
+	@Test
+	public void printName13() {
+		System.out.println("Preethi12");
+	}
+	
 
 }
