@@ -4,6 +4,6 @@
 # Log file
 *.log
 
-/target
-/test-output
-/.settings
+/target/
+/test-output/
+/.settings/
